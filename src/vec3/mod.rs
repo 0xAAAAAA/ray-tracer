@@ -1,13 +1,13 @@
+use std::clone::Clone;
 use std::f32;
 use std::fmt::Display;
 use std::fmt::Formatter;
 use std::fmt::Result;
+use std::marker::Copy;
 use std::ops::Add;
 use std::ops::Div;
 use std::ops::Mul;
 use std::ops::Sub;
-use std::marker::Copy;
-use std::clone::Clone;
 
 pub struct Vec3 {
     pub x: f32,
@@ -15,7 +15,6 @@ pub struct Vec3 {
     pub z: f32,
 }
 
-#[allow(dead_code)]
 impl Vec3 {
     pub fn new(x: f32, y: f32, z: f32) -> Vec3 {
         Vec3 { x: x, y: y, z: z }

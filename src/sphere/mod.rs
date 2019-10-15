@@ -8,7 +8,6 @@ pub struct Sphere {
     pub r: f32,
 }
 
-#[allow(dead_code, unused_variables)]
 impl Sphere {
     pub fn new(c: Vec3, r: f32) -> Sphere {
         Sphere { c: c, r: r }

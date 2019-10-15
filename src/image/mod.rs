@@ -46,7 +46,6 @@ pub struct Image {
     buffer: Vec<u8>,
 }
 
-#[allow(dead_code)]
 impl Image {
     pub fn new(w: u32, h: u32) -> Image {
         let size = 3 * w * h;
@@ -68,17 +67,6 @@ impl Image {
             Some(offset as usize)
         } else {
             None
-        }
-    }
-    pub fn get_pixel(&self, x: u32, y: u32) -> Option<RGB> {
-        match self.get_offset(x, y) {
-            Some(offset) => {
-                let r = self.buffer[offset];
-                let g = self.buffer[offset + 1];
-                let b = self.buffer[offset + 2];
-                Some(RGB { r: r, g: g, b: b })
-            }
-            None => None,
         }
     }
 
