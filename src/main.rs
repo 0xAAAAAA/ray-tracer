@@ -12,8 +12,8 @@ use vec3::Vec3;
 
 #[allow(unused_assignments)]
 fn main() {
-    let w = 600; // width
-    let h = 600; // height
+    let w = 500; // width
+    let h = 500; // height
 
     let white = Vec3::new(255.0, 255.0, 255.0); // white
     let black = Vec3::new(0.0, 0.0, 0.0); // black
